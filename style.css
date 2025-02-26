@@ -1,0 +1,208 @@
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Jost", sans-serif;
+}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  margin: 0;
+}
+
+
+    /* Juuri-elementti */
+    .root {
+        position: absolute;
+        width: 0.1px;
+        height: 0.1px;
+        background-color: rgba(91, 124, 110); 
+transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
+
+    /* Yksittäinen juuri kasvaa */
+    .root-growing {
+        width: 2px;
+        height: 30px;
+        background: linear-gradient(to bottom, rgba(91, 124, 110, 0.9), rgba(91, 124, 110));
+    }
+
+
+
+.navbar .navbar-links a {
+  background-color: none !important;
+padding: 16px; /* Linkin sisäinen marginaali */
+text-decoration: none; /* Poistaa alleviivauksen */
+font-size: 20px; /* Fonttikoko */
+color: #5B7C6E !important /* Linkin väri */
+}
+
+.navbar .navbar-links a:hover {
+color: #012A1C !important;
+background-color: transparent !important; /* Ei taustaväriä hover-tilassa */
+}
+
+
+/* Section container */
+.section-container, .section-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 128px 16px;
+  color: #F0EDE7;
+}
+
+/* Section 1 specific style */
+.section-container {
+  background-color: #5B7C6E;
+}
+
+/* Section 2 specific style */
+.section-container2 {
+  background-color: #D4D9D7;
+  color: #012A1C;
+}
+
+/* Header Background */
+.header-background {
+  background-image: url("images/taustakuva.png");
+  background-position: center 20px;
+  background-size: cover;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-color: #000000;
+}
+
+/* Navbar */
+.navbar .w3-bar {
+  background-color: transparent !important;
+  box-shadow: none;
+  border: none;
+}
+
+.navbar .navbar-logo {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: "Neonderthaw", serif;
+  font-size: 6rem;
+  color: #5B7C6E;
+  position: absolute;
+  left: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.navbar .navbar-links a {
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #5B7C6E;
+}
+
+/* Sidebar */
+#mySidebar {
+  background-color: #5B7C6E;
+  width: 300px;
+  color: #F0EDE7;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0);
+  padding-top: 20px;
+}
+
+#mySidebar .w3-bar-item {
+  font-size: 18px;
+  padding: 16px;
+  
+}
+
+#mySidebar .w3-bar-item:hover {
+  background-color: #4A6659;
+  color: white;
+}
+
+
+
+.herbarium-box {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+background-color: white; /* Valkoinen tausta */
+padding: 100px 100px; /* Reunukset */
+margin-top: 30px; /* Lisää tilaa koko laatikon yläpuolelle */
+border-radius: 50px; /* Kulmien pyöristys */
+gap: 20px;
+position: relative; /* Tarvitaan otsikon asetteluun */
+
+}
+
+.herbarium-header {
+width: 100%; /* Varmistaa, että otsikko vie koko rivin */
+text-align: center;
+margin-bottom: 20px; /* Tilaa otsikon ja kuvien väliin */
+
+}
+
+.section-title {
+font-family: "Jost", sans-serif;
+font-size: 3rem;
+color: #5B7C6E; /* Tumma vihreä */
+margin: 0;
+}
+
+.section-subtitle {
+font-size: 1rem;
+color: #5B7C6E; /* Tumma vihreä */
+margin: 5px 0 0;
+}
+
+.herbarium-image {
+background-color: tra;
+width: 32%; /* Kolme kuvaa rivissä */
+text-align: center;
+
+}
+
+.herbarium-image img {
+width: 50%;
+height: auto;
+border-radius: 4px; /* Pyöristetyt kulmat kuville */
+transition: transform 0.3s ease;
+}
+
+.herbarium-image img:hover {
+transform: scale(1.1); /* Kuvan zoomaus hover-tilassa */
+}
+
+
+.section-container.about {
+padding: 100px 20px; /* Reunukset */
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+position: relative; /* Tarvitaan otsikon asetteluun */
+
+padding: 128px 32px; /* Lisää vaakasuuntainen tila */
+color: #F0EDE7; /* Tekstin väri */
+background-color: #5B7C6E; /* Taustan väri */
+max-width: auto; /* Suurin leveys */
+margin: 0 auto; /* Keskittää sisällön suuremmilla näytöillä */
+}
+
+
+.section-title.about {
+font-size: 3rem; /* Otsikon fonttikoko */
+color: #F0EDE7; /* Otsikon väri */
+margin-bottom: 1%;
+margin-left: 40px; /* Marginaali vasemmalle */
+margin-right: 16px; /* Marginaali oikealle */
+
+}
+
+.section-subtitle.about {
+font-size: 1.2rem; /* Tekstin fonttikoko */
+color: #FFFFFF; /* Tekstin väri */
+line-height: 1.6; /* Lisää riviväliä */
+margin-left: 100px; /* Marginaali vasemmalle */
+margin-right: 100px; /* Marginaali oikealle */
+text-align: center;
+
+}
